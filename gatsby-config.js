@@ -6,10 +6,10 @@ const sitemapOptions = require(`./src/utils/sitemap`)
 require(`dotenv`).config()
 
 const siteMetadata = {
-  title: `janosh.dev`,
+  title: `blog`,
   description: `Physics, machine learning, sustainability and web development.`,
-  author: `Janosh Riebesell`,
-  url: `https://janosh.dev`,
+  author: `Bryan Guner`,
+  url: `https://advanced-gatsby-blog-2.netlify.app/`,
 }
 
 const gatsbyRemarkPlugins = [
@@ -70,12 +70,7 @@ const plugins = [
   `gatsby-transformer-yaml`,
   `gatsby-plugin-catch-links`,
   `gatsby-plugin-styled-components`,
-  {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: process.env.GOOGLE_ANALYTICS_ID,
-    },
-  },
+
   {
     resolve: `gatsby-plugin-algolia`,
     options: {
@@ -85,10 +80,7 @@ const plugins = [
       chunkSize: 10000, // default: 1000
     },
   },
-  {
-    resolve: `gatsby-plugin-feed`,
-    options: rssOptions,
-  },
+
   {
     resolve: `gatsby-plugin-sitemap`,
     options: sitemapOptions,

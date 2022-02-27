@@ -1,15 +1,15 @@
-# dependencies
+# # dependencies
 node_modules
 
-# builds
-.cache
-public
+# # builds
+# .cache
+# public
 
-# deploy config
-.netlify
+# # deploy config
+# .netlify
 
-# environment variables
-.env*
+# # environment variables
+# .env*
 
-# draft posts
-content/posts/drafts
+# # draft posts
+# content/posts/drafts
