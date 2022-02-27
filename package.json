@@ -54,6 +54,7 @@
     "sharp": "0.30.1",
     "styled-components": "^5.3.3",
     "styled-icons": "^10.45.0",
+    "url-loader": "^4.1.1",
     "vscode-styled-components": "styled-components/vscode-styled-components"
   },
   "devDependencies": {
